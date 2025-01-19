@@ -1,4 +1,16 @@
 # depslib dependency file v1.0
-1736047165 source:c:\users\tomas\documents\rpgturncombat\main.cpp
+1737250704 source:c:\users\tomas\documents\rpgturncombat\main.cpp
 	<iostream>
+	"Entity.h"
+	"Player.h"
+
+1737250452 c:\users\tomas\documents\rpgturncombat\entity.h
+	<string>
+
+1737250456 source:c:\users\tomas\documents\rpgturncombat\entity.cpp
+	"Entity.h"
+
+1737250694 c:\users\tomas\documents\rpgturncombat\player.h
+	<iostream>
+	"Entity.h"
 
