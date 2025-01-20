@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1737354878 source:c:\users\tomas\documents\rpgturncombat\main.cpp
+1737355196 source:c:\users\tomas\documents\rpgturncombat\main.cpp
 	<iostream>
 	"Entidad.h"
 
@@ -9,4 +9,10 @@
 1737355040 c:\users\tomas\documents\rpgturncombat\entidad.h
 	<string>
 	<iostream>
+
+1737355611 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
+	"Combate.h"
+
+1737355863 c:\users\tomas\documents\rpgturncombat\combate.h
+	"Entidad.h"
 

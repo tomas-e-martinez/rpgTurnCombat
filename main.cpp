@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "Entidad.h"
+#include "Combate.h"
 
 using namespace std;
 
@@ -17,11 +18,15 @@ int main()
         int opcion;
         cin >> opcion;
         switch(opcion){
-        case 1:
+        case 1:{
             system("cls");
             cout << "(COMBATE)" << endl;
+            Entidad enemigo(1, "Monstruo", 5, 7);
+            Combate combate(jugador, enemigo);
+            cout << "COMBATE ENTRE " << combate.getJugador().getNombre() << " Y " << combate.getEnemigo().getNombre() << endl;
             system("pause");
             break;
+        }
         case 2:{
             system("cls");
             cout << "(CREAR PERSONAJE)" << endl;
