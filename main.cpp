@@ -6,27 +6,47 @@ using namespace std;
 
 int main()
 {
-    Entidad entidad(0, "SIN NOMBRE");
+    Entidad jugador;
     while(true){
         system("cls");
         cout << "MENU PRINCIPAL" << endl;
         cout << "1. Combate" << endl;
-        cout << "2. Crear personaje"
+        cout << "2. Crear personaje" << endl;
+        cout << "3. Ver personaje" << endl;
         cout << "0. Salir" << endl;
         int opcion;
         cin >> opcion;
         switch(opcion){
         case 1:
+            system("cls");
             cout << "(COMBATE)" << endl;
             system("pause");
             break;
-        case 2:
-            cout << entidad.getId() << endl;
-            cout << entidad.getNombre() << endl;
-            cout << "(COMBATE)" << endl;
+        case 2:{
+            system("cls");
+            cout << "(CREAR PERSONAJE)" << endl;
+            cout << "NOMBRE: ";
+            string nombre;
+            cin >> nombre;
+            int fuerza, aguante;
+            cout << "FUERZA: ";
+            cin >> fuerza;
+            cout << "AGUANTE: ";
+            cin >> aguante;
+
+            jugador.setNombre(nombre);
+            jugador.setFuerza(fuerza);
+            jugador.setAguante(aguante);
+            break;
+        }
+        case 3:
+            system("cls");
+            cout << "(VER PERSONAJE)" << endl;
+            jugador.mostrar();
             system("pause");
             break;
         case 0:
+            system("cls");
             cout << "(SALIR)" << endl;
             system("pause");
             return 0;

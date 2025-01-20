@@ -1,8 +1,18 @@
 #include "Entidad.h"
 
-Entidad::Entidad(int id, string nombre){
+Entidad::Entidad(int id, string nombre, int fuerza, int aguante){
     _id = id;
     _nombre = nombre;
+    _fuerza = fuerza;
+    _aguante = aguante;
+}
+
+void Entidad::mostrar(){
+    cout << "INFO. DE LA ENTIDAD" << endl;
+    cout << "ID: " << _id << endl;
+    cout << "NOMBRE: " << _nombre << endl;
+    cout << "FUERZA: " << _fuerza << endl;
+    cout << "AGUANTE: " << _aguante << endl;
 }
 
 void Entidad::setId(int id){
@@ -11,4 +21,12 @@ void Entidad::setId(int id){
 
 void Entidad::setNombre(string nombre){
     _nombre = nombre;
+}
+
+void Entidad::setFuerza(int fuerza){
+    _fuerza = fuerza;
+}
+
+void Entidad::setAguante(int aguante){
+    _aguante = aguante;
 }

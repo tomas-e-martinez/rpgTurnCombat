@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1737353803 source:c:\users\tomas\documents\rpgturncombat\main.cpp
+1737354878 source:c:\users\tomas\documents\rpgturncombat\main.cpp
 	<iostream>
 	"Entidad.h"
 
-1737353669 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
+1737354993 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
 	"Entidad.h"
 
-1737353834 c:\users\tomas\documents\rpgturncombat\entidad.h
+1737355040 c:\users\tomas\documents\rpgturncombat\entidad.h
 	<string>
+	<iostream>
 
