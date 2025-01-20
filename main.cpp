@@ -1,14 +1,18 @@
 #include <iostream>
 
+#include "Entidad.h"
+
 using namespace std;
 
 int main()
 {
+    Entidad entidad(0, "SIN NOMBRE");
     while(true){
         system("cls");
         cout << "MENU PRINCIPAL" << endl;
         cout << "1. Combate" << endl;
-        cout << "2. Salir" << endl;
+        cout << "2. Crear personaje"
+        cout << "0. Salir" << endl;
         int opcion;
         cin >> opcion;
         switch(opcion){
@@ -17,6 +21,12 @@ int main()
             system("pause");
             break;
         case 2:
+            cout << entidad.getId() << endl;
+            cout << entidad.getNombre() << endl;
+            cout << "(COMBATE)" << endl;
+            system("pause");
+            break;
+        case 0:
             cout << "(SALIR)" << endl;
             system("pause");
             return 0;
