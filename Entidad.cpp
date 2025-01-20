@@ -1,10 +1,12 @@
 #include "Entidad.h"
 
-Entidad::Entidad(int id, string nombre, int fuerza, int aguante){
+Entidad::Entidad(int id, string nombre, int fuerza, int aguante, int energia, int energiaMaxima){
     _id = id;
     _nombre = nombre;
     _fuerza = fuerza;
     _aguante = aguante;
+    _energia = energia;
+    _energiaMaxima = energiaMaxima;
 }
 
 void Entidad::mostrar(){
@@ -13,6 +15,14 @@ void Entidad::mostrar(){
     cout << "NOMBRE: " << _nombre << endl;
     cout << "FUERZA: " << _fuerza << endl;
     cout << "AGUANTE: " << _aguante << endl;
+}
+
+void Entidad::mostrarHabilidades() const{
+    cout << "HABILIDADES DE " << _nombre << ": " << endl;
+    for(size_t i = 0; i < _habilidades.size(); ++i){
+        cout << i + 1 << ". ";
+        _habilidades[i].mostrarHabilidad();
+    }
 }
 
 void Entidad::setId(int id){

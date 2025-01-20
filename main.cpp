@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "Habilidad.h"
 #include "Entidad.h"
 #include "Combate.h"
 
@@ -8,6 +9,8 @@ using namespace std;
 int main()
 {
     Entidad jugador;
+    Habilidad ataqueBasico("Ataque Basico", 10, 20);
+    jugador.agregarHabilidad(ataqueBasico);
     while(true){
         system("cls");
         cout << "MENU PRINCIPAL" << endl;
@@ -22,8 +25,13 @@ int main()
             system("cls");
             cout << "(COMBATE)" << endl;
             Entidad enemigo(1, "Monstruo", 5, 7);
+            enemigo.agregarHabilidad(ataqueBasico);
+            Habilidad habilidad("Golpe monstruoso", 15, 50);
+            enemigo.agregarHabilidad(habilidad);
             Combate combate(jugador, enemigo);
             cout << "COMBATE ENTRE " << combate.getJugador().getNombre() << " Y " << combate.getEnemigo().getNombre() << endl;
+            jugador.mostrarHabilidades();
+            enemigo.mostrarHabilidades();
             system("pause");
             break;
         }
