@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1737356789 source:c:\users\tomas\documents\rpgturncombat\main.cpp
+1737358185 source:c:\users\tomas\documents\rpgturncombat\main.cpp
 	<iostream>
 	"Habilidad.h"
 	"Entidad.h"
 	"Combate.h"
 
-1737357550 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
+1737358047 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
 	"Entidad.h"
 
-1737357160 c:\users\tomas\documents\rpgturncombat\entidad.h
+1737358154 c:\users\tomas\documents\rpgturncombat\entidad.h
 	<string>
 	<iostream>
 	<vector>

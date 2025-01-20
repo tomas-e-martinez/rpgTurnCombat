@@ -14,7 +14,10 @@ protected:
     string _nombre;
     vector<Habilidad> _habilidades;
 public:
-    Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMaxima = 100);
+    Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMaxima = 100)
+        : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMaxima(energiaMaxima) {
+        _habilidades.emplace_back("Ataque Basico", 10, 0);
+    }
 
     void mostrar();
 

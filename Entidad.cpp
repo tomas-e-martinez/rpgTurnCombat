@@ -1,14 +1,5 @@
 #include "Entidad.h"
 
-Entidad::Entidad(int id, string nombre, int fuerza, int aguante, int energia, int energiaMaxima){
-    _id = id;
-    _nombre = nombre;
-    _fuerza = fuerza;
-    _aguante = aguante;
-    _energia = energia;
-    _energiaMaxima = energiaMaxima;
-}
-
 void Entidad::mostrar(){
     cout << "INFO. DE LA ENTIDAD" << endl;
     cout << "ID: " << _id << endl;
