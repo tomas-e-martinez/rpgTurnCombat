@@ -26,9 +26,8 @@ int main()
             Habilidad habilidad("Golpe monstruoso", 15, 50);
             enemigo.agregarHabilidad(habilidad);
             Combate combate(jugador, enemigo);
-            cout << "COMBATE ENTRE " << combate.getJugador().getNombre() << " Y " << combate.getEnemigo().getNombre() << endl;
-            jugador.mostrarHabilidades();
-            enemigo.mostrarHabilidades();
+            cout << combate.getJugador().getNombre() << " Vs. " << combate.getEnemigo().getNombre() << endl;
+            combate.mostrarEstados();
             system("pause");
             break;
         }

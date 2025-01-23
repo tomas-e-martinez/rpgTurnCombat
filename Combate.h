@@ -11,6 +11,8 @@ public:
     Combate(Entidad& jugador, Entidad& enemigo)
         : _jugador(jugador), _enemigo(enemigo), _estaActivo(true){}
 
+    void mostrarEstados();
+
     Entidad getJugador(){return _jugador;}
     Entidad getEnemigo(){return _enemigo;}
     bool getEstaActivo(){return _estaActivo;}

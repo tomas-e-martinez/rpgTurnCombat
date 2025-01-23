@@ -11,11 +11,12 @@ class Entidad{
 protected:
     int _id;
     int _fuerza, _aguante, _energia, _energiaMaxima;
+    int _vida, _vidaMax;
     string _nombre;
     vector<Habilidad> _habilidades;
 public:
     Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMaxima = 100)
-        : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMaxima(energiaMaxima) {
+        : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMaxima(energiaMaxima), _vida(100), _vidaMax(100) {
         _habilidades.emplace_back("Ataque Basico", 10, 0);
     }
 
@@ -28,9 +29,13 @@ public:
     string getNombre(){return _nombre;}
     int getFuerza(){return _fuerza;}
     int getAguante(){return _aguante;}
+    int getVida(){return _vida;}
+    int getVidaMax(){return _vidaMax;}
 
     void setId(int id);
     void setNombre(string nombre);
     void setFuerza(int fuerza);
     void setAguante(int aguante);
+    void setVida(int vida);
+    void setVidaMax(int vidaMax);
 };

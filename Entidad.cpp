@@ -31,3 +31,11 @@ void Entidad::setFuerza(int fuerza){
 void Entidad::setAguante(int aguante){
     _aguante = aguante;
 }
+
+void Entidad::setVida(int vida){
+    _vida = vida;
+}
+
+void Entidad::setVidaMax(int vidaMax){
+    _vidaMax = vidaMax;
+}
