@@ -5,6 +5,7 @@
 #include "Habilidad.h"
 #include "Entidad.h"
 #include "Player.h"
+#include "Enemigo.h"
 #include "Combate.h"
 
 using namespace std;
@@ -26,9 +27,8 @@ int main()
         cin >> opcion;
         switch(opcion){
         case 1:{
-            Entidad enemigo(1, "Monstruo", 1, 2);
-            Habilidad habilidad("Golpe Monstruoso", 15, 50, 1);
-            enemigo.agregarHabilidad(habilidad);
+            Enemigo enemigo;
+            enemigo.generar(jugador.getNivel());
             Combate combate(jugador, enemigo);
             combate.iniciar();
             system("pause");
@@ -40,15 +40,6 @@ int main()
             cout << "NOMBRE: ";
             string nombre;
             cin >> nombre;
-            int fuerza, aguante;
-            cout << "FUERZA: ";
-            cin >> fuerza;
-            cout << "AGUANTE: ";
-            cin >> aguante;
-
-            jugador.setNombre(nombre);
-            jugador.setFuerza(fuerza);
-            jugador.setAguante(aguante);
             break;
         }
         case 3:

@@ -2,6 +2,7 @@
 
 #include "Entidad.h"
 #include "Player.h"
+#include "Enemigo.h"
 
 class Combate{
 private:
@@ -9,7 +10,7 @@ private:
     Entidad& _enemigo;
     bool _estaActivo;
 public:
-    Combate(Player& jugador, Entidad& enemigo)
+    Combate(Player& jugador, Enemigo& enemigo)
         : _jugador(jugador), _enemigo(enemigo), _estaActivo(true){}
 
     void mostrarEstados();
