@@ -28,5 +28,5 @@
   <li><h4>Sistema de pociones/consumibles.</h4></li>
   <li><h4>Sistema de armadura y demás objetos a equipar.</h4></li>
   <li><h4>Sistema de exploración.</h4></li>
-  <li><h4>Sistema de estadísticas mas detallado.</h4></li>
+  <li><h4>Sistema de estadísticas más detallado.</h4></li>
 </ul>
