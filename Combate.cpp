@@ -81,4 +81,14 @@ void Combate::iniciar(){
         system("cls");
         cout << _jugador.getNombre() << " vs. " << _enemigo.getNombre() << endl;
         mostrarEstados();
+
+        if(_jugador.getVida() == 0){
+            cout << "¡Has sido derrotado por " << _enemigo.getNombre() << "!" << endl;
+            return;
+        }
+
+        else{
+            cout << "¡Derrotaste a " << _enemigo.getNombre() << "!" << endl;
+            return;
+        }
 }
