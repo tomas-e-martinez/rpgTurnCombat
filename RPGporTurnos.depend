@@ -9,13 +9,13 @@
 1737599494 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
 	"Entidad.h"
 
-1737602247 c:\users\tomas\documents\rpgturncombat\entidad.h
+1737603466 c:\users\tomas\documents\rpgturncombat\entidad.h
 	<string>
 	<iostream>
 	<vector>
 	"Habilidad.h"
 
-1737602957 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
+1737603152 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
 	"Combate.h"
 
 1737602590 c:\users\tomas\documents\rpgturncombat\combate.h

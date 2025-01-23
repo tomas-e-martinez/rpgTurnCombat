@@ -11,7 +11,7 @@ void Combate::mostrarEstados(){
 }
 
 int Combate::turnoJugador(){
-    cout << "ELIGE UNA ACCION" << endl;
+    cout << "ELIGE UNA ACCIÓN" << endl;
     vector<Habilidad> habilidadesJugador = _jugador.getHabilidades();
     for(size_t i = 0; i < habilidadesJugador.size(); i++){
         cout << i+1 << ". " << habilidadesJugador[i].mostrarHabilidad() << endl;
@@ -19,11 +19,11 @@ int Combate::turnoJugador(){
     cout << endl;
 
     int opcion;
-    cout << "OPCION: ";
+    cout << "OPCIÓN: ";
     cin >> opcion;
 
     if(opcion < 1 || opcion > habilidadesJugador.size()){
-        cout << "OPCION INVALIDA, INTENTE DE NUEVO." << endl;
+        cout << "OPCIÓN INVÁLIDA, INTENTE DE NUEVO." << endl;
         system("pause");
         return -1;
     }
@@ -38,7 +38,7 @@ int Combate::turnoJugador(){
 void Combate::turnoEnemigo(){
     vector<Habilidad> habilidadesEnemigo = _enemigo.getHabilidades();
     int opcion = rand() % habilidadesEnemigo.size();
-    cout << endl << _enemigo.getNombre() << " utilizo " << habilidadesEnemigo[opcion].getNombre() << endl;
+    cout << endl << _enemigo.getNombre() << " utilizó " << habilidadesEnemigo[opcion].getNombre() << endl;
     system("pause");
     return;
 }
