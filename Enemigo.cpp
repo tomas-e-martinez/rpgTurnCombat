@@ -12,35 +12,50 @@ void Enemigo::generar(int nivelJugador){
     _nombre = nombres[tipo];
 
     switch(tipo){
-    case 0: //Orco
+    case 0:{ //Orco
         _fuerza = 3 + 1.1 * _nivel;
         _aguante = 3 + 1 * _nivel;
         _energia = _energiaMax = 90;
         _vida = _vidaMax = 90 + 3 * _nivel;
+        Habilidad habilidad("Golpe Poderoso", 20, 35, 1);
+        agregarHabilidad(habilidad);
         break;
-    case 1: //Ogro
+    }
+    case 1:{ //Ogro
         _fuerza = 4 + 1.2 * _nivel;
         _aguante = 3 + 1.3 * _nivel;
         _energia = _energiaMax = 70;
         _vida = _vidaMax = 105 + 5 * _nivel;
+        Habilidad habilidad("Embestida", 35, 55, 1);
+        agregarHabilidad(habilidad);
         break;
-    case 2: //Goblin
+    }
+    case 2:{ //Goblin
         _fuerza = 2 + 1 * _nivel;
         _aguante = 1 + 1 * _nivel;
         _energia = _energiaMax = 110;
         _vida = _vidaMax = 80 + 3 * _nivel;
+        Habilidad habilidad("Lanzar Piedra", 15, 15, 1);
+        agregarHabilidad(habilidad);
         break;
-    case 3: //Ladrón
+    }
+    case 3:{ //Ladrón
         _fuerza = 2 + 0.9 * _nivel;
         _aguante = 1 + 0.9 * _nivel;
         _energia = _energiaMax = 80;
         _vida = _vidaMax = 95 + 4 * _nivel;
+        Habilidad habilidad("Golpe de Puño", 12, 20, 1);
+        agregarHabilidad(habilidad);
         break;
-    case 4: //Asesino
+    }
+    case 4:{ //Asesino
         _fuerza = 3 + 1.2 * _nivel;
         _aguante = 1 + 0.8 * _nivel;
         _energia = _energiaMax = 120;
         _vida = _vidaMax = 80 + 3 * _nivel;
+        Habilidad habilidad("Puñalada", 35, 20, 1);
+        agregarHabilidad(habilidad);
         break;
+    }
     }
 }
