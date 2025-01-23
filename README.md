@@ -20,6 +20,11 @@
     <h4>Sistema de loot e inventario básico.</h4>
     <p>El jugador contará con un inventario donde en principio podrá llevar los objetos recibidos como recompensa de los combates, y el arma equipada.</p>
   </li>
+  </li>
+  <li>
+    <h4>Sistema de guardado.</h4>
+    <p>Persistencia simple del estado del personaje y su inventario, y opción para borrar partida.</p>
+  </li>
 </ul>
 
 <h3>Tentativos/A Futuro</h3>
@@ -28,4 +33,5 @@
   <li><h4>Sistema de pociones/consumibles.</h4></li>
   <li><h4>Sistema de armadura y demás objetos a equipar.</h4></li>
   <li><h4>Sistema de exploración.</h4></li>
+  <li><h4>Sistema de estadísticas más detallado.</h4></li>
 </ul>
