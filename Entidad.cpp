@@ -1,6 +1,6 @@
 #include "Entidad.h"
 
-void Entidad::mostrar(){
+void Entidad::mostrar() const{
     cout << "INFO. DE LA ENTIDAD" << endl;
     cout << "ID: " << _id << endl;
     cout << "NOMBRE: " << _nombre << endl;

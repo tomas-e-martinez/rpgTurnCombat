@@ -22,7 +22,7 @@ public:
         _habilidades.emplace_back("Vendaje", 5, 20, 2);
     }
 
-    void mostrar();
+    virtual void mostrar() const;
 
     void agregarHabilidad(const Habilidad& habilidad){_habilidades.push_back(habilidad);}
     void mostrarHabilidades() const;

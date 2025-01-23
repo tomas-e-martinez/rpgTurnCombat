@@ -4,6 +4,7 @@
 
 #include "Habilidad.h"
 #include "Entidad.h"
+#include "Player.h"
 #include "Combate.h"
 
 using namespace std;
@@ -13,7 +14,7 @@ int main()
     setlocale(LC_ALL, "");
     srand(time(0));
 
-    Entidad jugador;
+    Player jugador;
     while(true){
         system("cls");
         cout << "MENÚ PRINCIPAL" << endl;
