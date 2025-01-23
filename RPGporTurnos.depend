@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1737599637 source:c:\users\tomas\documents\rpgturncombat\main.cpp
+1737602986 source:c:\users\tomas\documents\rpgturncombat\main.cpp
 	<iostream>
+	<ctime>
 	"Habilidad.h"
 	"Entidad.h"
 	"Combate.h"
@@ -8,22 +9,22 @@
 1737599494 source:c:\users\tomas\documents\rpgturncombat\entidad.cpp
 	"Entidad.h"
 
-1737599589 c:\users\tomas\documents\rpgturncombat\entidad.h
+1737602247 c:\users\tomas\documents\rpgturncombat\entidad.h
 	<string>
 	<iostream>
 	<vector>
 	"Habilidad.h"
 
-1737599602 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
+1737602957 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
 	"Combate.h"
 
-1737599246 c:\users\tomas\documents\rpgturncombat\combate.h
+1737602590 c:\users\tomas\documents\rpgturncombat\combate.h
 	"Entidad.h"
 
-1737357442 source:c:\users\tomas\documents\rpgturncombat\habilidad.cpp
+1737601314 source:c:\users\tomas\documents\rpgturncombat\habilidad.cpp
 	"Habilidad.h"
 
-1737357450 c:\users\tomas\documents\rpgturncombat\habilidad.h
+1737601193 c:\users\tomas\documents\rpgturncombat\habilidad.h
 	<string>
 	<iostream>
 

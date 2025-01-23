@@ -10,14 +10,15 @@ using namespace std;
 class Entidad{
 protected:
     int _id;
-    int _fuerza, _aguante, _energia, _energiaMaxima;
-    int _vida, _vidaMax;
     string _nombre;
+    int _fuerza, _aguante, _energia, _energiaMax;
+    int _vida, _vidaMax;
     vector<Habilidad> _habilidades;
 public:
-    Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMaxima = 100)
-        : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMaxima(energiaMaxima), _vida(100), _vidaMax(100) {
+    Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMax = 100)
+        : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMax(energiaMax), _vida(100), _vidaMax(100) {
         _habilidades.emplace_back("Ataque Basico", 10, 0);
+        _habilidades.emplace_back("Defender", 0, 0);
     }
 
     void mostrar();
@@ -31,6 +32,9 @@ public:
     int getAguante(){return _aguante;}
     int getVida(){return _vida;}
     int getVidaMax(){return _vidaMax;}
+    int getEnergia(){return _energia;}
+    int getEnergiaMax(){return _energiaMax;}
+    const vector<Habilidad>& getHabilidades() const{return _habilidades;}
 
     void setId(int id);
     void setNombre(string nombre);

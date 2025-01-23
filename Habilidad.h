@@ -17,5 +17,5 @@ public:
     int getPoder() const {return _poder;}
     int getCosto() const {return _costo;}
 
-    void mostrarHabilidad() const;
+    string mostrarHabilidad() const;
 };

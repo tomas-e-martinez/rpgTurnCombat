@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 #include "Habilidad.h"
 #include "Entidad.h"
@@ -8,6 +9,8 @@ using namespace std;
 
 int main()
 {
+    srand(time(0));
+
     Entidad jugador;
     while(true){
         system("cls");
@@ -20,14 +23,11 @@ int main()
         cin >> opcion;
         switch(opcion){
         case 1:{
-            system("cls");
-            cout << "(COMBATE)" << endl;
             Entidad enemigo(1, "Monstruo", 5, 7);
             Habilidad habilidad("Golpe monstruoso", 15, 50);
             enemigo.agregarHabilidad(habilidad);
             Combate combate(jugador, enemigo);
-            cout << combate.getJugador().getNombre() << " Vs. " << combate.getEnemigo().getNombre() << endl;
-            combate.mostrarEstados();
+            combate.iniciar();
             system("pause");
             break;
         }

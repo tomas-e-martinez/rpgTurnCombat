@@ -12,6 +12,9 @@ public:
         : _jugador(jugador), _enemigo(enemigo), _estaActivo(true){}
 
     void mostrarEstados();
+    void iniciar();
+    int turnoJugador(); ///SI NO TERMINA CORRECTAMENTE, DEVUELVE -1
+    void turnoEnemigo();
 
     Entidad getJugador(){return _jugador;}
     Entidad getEnemigo(){return _enemigo;}

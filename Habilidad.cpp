@@ -1,5 +1,5 @@
 #include "Habilidad.h"
 
-void Habilidad::mostrarHabilidad() const{
-    cout << _nombre << " (Poder: " << _poder << ", Costo: " << _costo << ")\n";
+string Habilidad::mostrarHabilidad() const{
+    return _nombre + " (Poder: " + to_string(_poder) + ", Costo: " + to_string(_costo) + ")";
 }
