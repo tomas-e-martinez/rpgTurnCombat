@@ -17,11 +17,12 @@
 	<vector>
 	"Habilidad.h"
 
-1737608921 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
+1737612152 source:c:\users\tomas\documents\rpgturncombat\combate.cpp
 	"Combate.h"
 
-1737602590 c:\users\tomas\documents\rpgturncombat\combate.h
+1737610827 c:\users\tomas\documents\rpgturncombat\combate.h
 	"Entidad.h"
+	"Player.h"
 
 1737601314 source:c:\users\tomas\documents\rpgturncombat\habilidad.cpp
 	"Habilidad.h"
@@ -30,9 +31,10 @@
 	<string>
 	<iostream>
 
-1737609109 source:c:\users\tomas\documents\rpgturncombat\player.cpp
+1737612233 source:c:\users\tomas\documents\rpgturncombat\player.cpp
+	"Player.h"
 
-1737609995 c:\users\tomas\documents\rpgturncombat\player.h
+1737611802 c:\users\tomas\documents\rpgturncombat\player.h
 	<string>
 	<vector>
 	"Entidad.h"

@@ -1,5 +1,28 @@
 #include "Combate.h"
 
+int Combate::calcularExp(){
+    double exp = 100;
+    for(int i = 1; i < _enemigo.getNivel(); i++){
+        exp = exp + exp * 0.1;
+    }
+
+    int difNivel = _enemigo.getNivel() - _jugador.getNivel();
+
+    exp = exp + difNivel * (exp * 0.1);
+
+    return static_cast<int>(exp);
+}
+
+int Combate::calcularOro(){
+    double oro = rand() % 50;
+
+    for(int i = 1; i < _enemigo.getNivel(); i++){
+        oro = oro + oro * 0.1;
+    }
+
+    return static_cast<int>(oro);
+}
+
 void Combate::mostrarEstados(){
     cout << endl << _jugador.getNombre() << " (NIVEL " << _jugador.getNivel() << ")" << endl;
     cout << "HP: " << _jugador.getVida() << "/" << _jugador.getVidaMax() << endl;
@@ -58,6 +81,7 @@ void Combate::turnoEnemigo(){
 
 void Combate::iniciar(){
     _estaActivo = true;
+    _jugador.setVida(_jugador.getVidaMax());
     while(_estaActivo){
         system("cls");
         cout << _jugador.getNombre() << " vs. " << _enemigo.getNombre() << endl;
@@ -66,14 +90,14 @@ void Combate::iniciar(){
         if(turnoJugador() == -1)
             continue;
         if(_jugador.getVida() == 0 || _enemigo.getVida() == 0){
-            _estaActivo == false;
+            _estaActivo = false;
             break;
         }
 
 
         turnoEnemigo();
         if(_jugador.getVida() == 0 || _enemigo.getVida() == 0){
-            _estaActivo == false;
+            _estaActivo = false;
             break;
         }
     }
@@ -89,6 +113,10 @@ void Combate::iniciar(){
 
         else{
             cout << "¡Derrotaste a " << _enemigo.getNombre() << "!" << endl;
+            cout << "Has ganado " << calcularExp() << " puntos de experiencia." << endl;
+            _jugador.ganarExp(calcularExp());
+            cout << "Has obtenido " << calcularOro() << " de oro." << endl;
+            cout << "Progreso de experiencia: " << _jugador.getExp() << "/" << _jugador.getExpMax() << endl;
             return;
         }
 }
