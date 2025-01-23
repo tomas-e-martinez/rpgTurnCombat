@@ -116,7 +116,9 @@ void Combate::iniciar(){
             cout << "Has ganado " << calcularExp() << " puntos de experiencia." << endl;
             _jugador.ganarExp(calcularExp());
             cout << "Has obtenido " << calcularOro() << " de oro." << endl;
+            _jugador.setOro(_jugador.getOro() + calcularOro());
             cout << "Progreso de experiencia: " << _jugador.getExp() << "/" << _jugador.getExpMax() << endl;
+            cout << "Oro: " << _jugador.getOro() << endl;
             return;
         }
 }

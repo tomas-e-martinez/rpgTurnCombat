@@ -1,8 +1,9 @@
 #include "Player.h"
 
 void Player::mostrar() const{
-    cout << "INFO. DE LA ENTIDAD" << endl;
+    cout << "INFO. DEL JUGADOR" << endl;
     cout << "NOMBRE: " << _nombre << endl;
+    cout << "NIVEL: " << _nivel << endl;
     cout << "FUERZA: " << _fuerza << endl;
     cout << "AGUANTE: " << _aguante << endl;
     cout << "EXPERIENCIA: " << _exp << "/" << _expMax << endl;
