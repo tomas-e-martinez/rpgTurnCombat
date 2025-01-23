@@ -26,7 +26,7 @@ int main()
         switch(opcion){
         case 1:{
             Entidad enemigo(1, "Monstruo", 5, 7);
-            Habilidad habilidad("Golpe Monstruoso", 15, 50);
+            Habilidad habilidad("Golpe Monstruoso", 15, 50, 1);
             enemigo.agregarHabilidad(habilidad);
             Combate combate(jugador, enemigo);
             combate.iniciar();
