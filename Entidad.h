@@ -19,7 +19,7 @@ public:
     Entidad(int id = 0, string nombre = "SIN NOMBRE" , int fuerza = 1, int aguante = 1, int energia = 100, int energiaMax = 100, int nivel = 1)
         : _id(id), _nombre(nombre), _fuerza(fuerza), _aguante(aguante), _energia(energia), _energiaMax(energiaMax), _vida(100), _vidaMax(100), _nivel(nivel){
         _habilidades.emplace_back("Ataque Básico", 10, 0, 1);
-        _habilidades.emplace_back("Vendaje", 5, 0, 2);
+        _habilidades.emplace_back("Vendaje", 5, 20, 2);
     }
 
     void mostrar();

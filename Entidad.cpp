@@ -35,8 +35,9 @@ int Entidad::curar(int curacion){
 
 void Entidad::usarHabilidad(Habilidad& habilidad, Entidad& enemigo){
     int tipo = habilidad.getTipo();
+    _energia -= habilidad.getCosto();
     if(tipo == 1){
-        cout << habilidad.getNombre() << " infligió " << enemigo.recibirDanio(habilidad.getPoder()) << " de daño a " << enemigo.getNombre() << endl;
+        cout << habilidad.getNombre() << " infligió " << enemigo.recibirDanio(habilidad.getPoder() + _fuerza) << " de daño a " << enemigo.getNombre() << endl;
     }
     if(tipo == 2){
         cout << habilidad.getNombre() << " se curó " << curar(habilidad.getPoder()) << " puntos de vida." << endl;

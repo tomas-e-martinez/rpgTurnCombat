@@ -22,8 +22,15 @@ int Combate::turnoJugador(){
     cout << "OPCIÓN: ";
     cin >> opcion;
 
+
     if(opcion < 1 || opcion > habilidadesJugador.size()){
         cout << "OPCIÓN INVÁLIDA, INTENTE DE NUEVO." << endl;
+        system("pause");
+        return -1;
+    }
+
+    if(_jugador.getEnergia() < habilidadesJugador[opcion-1].getCosto()){
+        cout << "¡No tienes suficiente energía para usar " << habilidadesJugador[opcion-1].getNombre() << "!" << endl;
         system("pause");
         return -1;
     }
@@ -39,6 +46,10 @@ int Combate::turnoJugador(){
 void Combate::turnoEnemigo(){
     vector<Habilidad> habilidadesEnemigo = _enemigo.getHabilidades();
     int opcion = rand() % habilidadesEnemigo.size();
+
+    while(_enemigo.getEnergia() < habilidadesEnemigo[opcion].getCosto() || (habilidadesEnemigo[opcion].getTipo() == 2 && _enemigo.getVida() == _enemigo.getVidaMax())) ///Si no tiene energía para esa habilidad, busca otra random.
+        opcion = rand() % habilidadesEnemigo.size();
+
     cout << endl << _enemigo.getNombre() << " utilizó " << habilidadesEnemigo[opcion].getNombre() << endl;
     _enemigo.usarHabilidad(habilidadesEnemigo[opcion], _jugador);
     system("pause");

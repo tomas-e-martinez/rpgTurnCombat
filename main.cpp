@@ -25,7 +25,7 @@ int main()
         cin >> opcion;
         switch(opcion){
         case 1:{
-            Entidad enemigo(1, "Monstruo", 5, 7);
+            Entidad enemigo(1, "Monstruo", 1, 2);
             Habilidad habilidad("Golpe Monstruoso", 15, 50, 1);
             enemigo.agregarHabilidad(habilidad);
             Combate combate(jugador, enemigo);
