@@ -34,10 +34,14 @@
 		</Compiler>
 		<Unit filename="Combate.cpp" />
 		<Unit filename="Combate.h" />
+		<Unit filename="Enemigo.cpp" />
+		<Unit filename="Enemigo.h" />
 		<Unit filename="Entidad.cpp" />
 		<Unit filename="Entidad.h" />
 		<Unit filename="Habilidad.cpp" />
 		<Unit filename="Habilidad.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

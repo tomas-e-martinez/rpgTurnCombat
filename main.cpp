@@ -40,6 +40,7 @@ int main()
             cout << "NOMBRE: ";
             string nombre;
             cin >> nombre;
+            jugador.setNombre(nombre);
             break;
         }
         case 3:
